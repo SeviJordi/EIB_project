@@ -55,7 +55,7 @@ pyseer --lmm \
     --cpu $SLURM_CPUS_PER_TASK > $out_dir/meropenem_kmers.txt
 
 # Get number of patterns and threshold
-python code/count_patterns \
+python code/count_patterns.py \
     --alpha 0.01 \
     $out_dir/kmer_patterns.txt > $out_dir/pattern_counts.txt
 
